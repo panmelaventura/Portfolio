@@ -56,8 +56,8 @@ class Resume extends Component {
                         />
 
                         <Experience
-                        startYear={2012} 
-                        endYear={2015}
+                        startYear={2008} 
+                        endYear={2012}
                         jobName="Ricardo Electro LTDA"
                         jobDescription="Customers Support Coordinator" 
                         />
