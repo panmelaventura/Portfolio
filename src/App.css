@@ -207,5 +207,10 @@
   font-size: 15px;
   }
 
-
+  @media (max-width: 479px){
+    .mdl-grid {
+        padding: 8px;
+        height: auto;
+    }
+  }
 

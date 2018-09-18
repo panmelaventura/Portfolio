@@ -39,9 +39,9 @@ class Projects extends Component {
             <img src={arcomaquinas} alt={"arcomaquinas"} style={{ height: '100%', padding:'0'}} />                             
             </Card>
 
-            <Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginBottom: '10px',  marginRight:'370px'}}>
+            {/*<Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginBottom: '10px',  marginRight:'370px'}}>
             <img src={anchor} alt={"anchor"} style={{ height: '100%', padding:'0'}} />           
-            </Card>         
+            </Card>  */}       
 
             </div>
           )
@@ -65,7 +65,7 @@ class Projects extends Component {
                     
 
 
-                    <Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginRight: '5px', marginBottom: '15px'}}>
+                    {/*<Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginRight: '5px', marginBottom: '15px'}}>
                     <img src={cardapioLi} style={{ height: '100%', padding:'0'}} />
                     </Card>
 
@@ -78,7 +78,7 @@ class Projects extends Component {
                     </Card>
 
 
-                    {/* <Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginRight: '5px', marginBottom: '15px'}}>
+                     <Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginRight: '5px', marginBottom: '15px'}}>
                     <img src={manu} style={{ height: '100%', padding:'0'}} />
                     </Card>
 
