@@ -15,17 +15,27 @@ class Landing extends Component {
                             <br clear="all" />
                             <br />
                             <hr />
-                            <p>HTML/CSS | Bootstrap | Javascript | React JS | Node JS </p>
+                            <p>HTML | CSS | JavaScript | Photoshop | Illustrator | CorelDRAW </p>
 
 
-                            <div className="landing-text">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        <div className="landing-text">
+                            Graduated in Marketing, I have 5 years of experience in
+                            Marketing, Web Design, Printed Media and related fields. I’m a professional 
+                            with strategic vision, which values the good relationship and the organizational 
+                            climate of the company. I´m an effective and proactive professional who is
+                            able to work well and contribute within any existing team.
+
                         </div>
                         </div>
                         <br />
+                        
+                        
                     </Cell>
 
                 </Grid>
+                
+                <br />
+                <br />
 
             </div>
         )

@@ -5,7 +5,7 @@ import {Grid, Cell, List, ListItem, ListItemContent} from 'react-mdl';
 class Contact extends Component {
     render(){
         return(
-             <div className="contact-body">
+             <div className="contact-body" style={{backgroundColor:'#f1f1f1'}}>
                 <Grid className="contact-grid">
                     <Cell col={6}>
                     <h2 className="h2-style">Contact Me</h2>
@@ -21,13 +21,6 @@ class Contact extends Component {
 
                     <ListItem>
                         <ListItemContent style={{fontSize:'20px'}}>
-                            <i className="fa fa-fax" aria-hidden="true"/>
-                            (416) 938 6402
-                        </ListItemContent>
-                     </ListItem>
-
-                     <ListItem>
-                        <ListItemContent style={{fontSize:'20px'}}>
                             <i className="fa fa-envelope" aria-hidden="true"/>
                             panmelaventura@gmail.com
                         </ListItemContent>
@@ -36,21 +29,21 @@ class Contact extends Component {
                      <ListItem>
                         <ListItemContent style={{fontSize:'20px'}}>
                             <i className="fa fa-skype" aria-hidden="true"/>
-                            MySkypeID
+                            live:panmelaventura
                         </ListItemContent>
                     </ListItem>
 
-                     <ListItem>
+                     {/*<ListItem>
                         <ListItemContent style={{fontSize:'20px'}}>
                             <i className="fa fa-github" aria-hidden="true"/>
                             GitHub
                         </ListItemContent>
-                    </ListItem>
+                     </ListItem>*/}
 
                      <ListItem>
                         <ListItemContent style={{fontSize:'20px'}}>
-                            <i className="fa fa-facebook" aria-hidden="true"/>
-                            Facebook
+                            <i className="fa fa-linkedin" aria-hidden="true"/>
+                            <a href="https://www.linkedin.com/in/panmela-ventura-da-graca-de-morais-275878164/" target="_blank" style={{textDecoration: 'none', color:'black'}} >Panmela Morais</a>
                         </ListItemContent> 
                     </ListItem>
                     </List>

@@ -1,5 +1,20 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardMenu, IconButton } from 'react-mdl';
+import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardActions, CardText, CardMenu, IconButton, Document, Page, pageNumber, } from 'react-mdl';
+import snackbar from './snackbar.jpg';
+import makeup from './makeup.jpg';
+import arcomaquinas from './arcomaquinas.jpg';
+import anchor from './anchor.jpg';
+import bannerLi from './bannerLi.jpg';
+import cartaoLi from './cartaoLi.jpg';
+import cardapioLi from './cardapioLi.jpg';
+// import folder from './folder.jpg';
+// import catalogo from './catalogo.jpg';
+// import novo from './cartaoTersel.jpg';
+// import manu from './manu.jpg';
+// import nana from './nana.jpg';
+// import festa from './festa.jpg';
+
+
 
 class Projects extends Component {
     constructor(props) {
@@ -7,105 +22,97 @@ class Projects extends Component {
         this.state = { activeTab: 0 };
     }
 
+
     toggleCategories() {
         if (this.state.activeTab === 0) {
             return (
                 
-                    <div className="projects-grid">
-                        {/*Projects1*/}
-                        <Card shadow={1} style={{ minWidth: '450', margin: 'auto' }}>
-                            <CardTitle style={{
-                                color: 'black', height: '176px', background:
-                                    'url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png) center / cover'
-                            }}> React Project #1
-                        </CardTitle>
+        <div className="projects-grid">
+            <Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginRight: '5px', marginBottom: '10px'}}>
+            <img src={snackbar} alt={"snackbar"} style={{ height: '100%', padding:'0'}} />
+            </Card>
 
-                            <CardText>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        </CardText>
+            <Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginRight: '5px', marginBottom: '10px'}}>
+            <img src={makeup} alt={"makeup"} style={{ height: '100%', padding:'0'}} />              
+            </Card>
 
-                            {/*<CardActions border>
-                            <Button colored>GitHub</Button>
-                            <Button colored>CodePen</Button>
-                            <Button colored>LiveDemo</Button>
-                        </CardActions>*/}
+            <Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginRight: '5px', marginBottom: '10px'}}>
+            <img src={arcomaquinas} alt={"arcomaquinas"} style={{ height: '100%', padding:'0'}} />                             
+            </Card>
 
-                            <CardMenu style={{ color: '#fff' }}>
-                                <IconButton name="share" />
-                            </CardMenu>
-                        </Card>
+            <Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginBottom: '10px',  marginRight:'370px'}}>
+            <img src={anchor} alt={"anchor"} style={{ height: '100%', padding:'0'}} />           
+            </Card>         
 
-                        {/*Projects2*/}
-                        <Card shadow={1} style={{ minWidth: '450', margin: 'auto' }}>
-                            <CardTitle style={{
-                                color: 'black', height: '176px', background:
-                                    'url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png) center / cover'
-                            }}> React Project #2
-                        </CardTitle>
-
-                            <CardText>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        </CardText>
-
-                            {/*<CardActions border>
-                            <Button colored>GitHub</Button>
-                            <Button colored>CodePen</Button>
-                            <Button colored>LiveDemo</Button>
-                        </CardActions>*/}
-
-                            <CardMenu style={{ color: '#fff' }}>
-                                <IconButton name="share" />
-                            </CardMenu>
-                        </Card>
-
-                        {/*Projects3*/}
-                        <Card shadow={1} style={{ minWidth: '450', margin: 'auto' }}>
-                            <CardTitle style={{
-                                color: 'black', height: '176px', background:
-                                    'url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png) center / cover'
-                            }}> React Project #3
-                        </CardTitle>
-
-                            <CardText>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        </CardText>
-
-                            {/*<CardActions border>
-                            <Button colored>GitHub</Button>
-                            <Button colored>CodePen</Button>
-                            <Button colored>LiveDemo</Button>
-                        </CardActions>*/}
-
-                            <CardMenu style={{ color: '#fff' }}>
-                                <IconButton name="share" />
-                            </CardMenu>
-                        </Card>
-                    </div>
-            )
+            </div>
+          )
         } else if (this.state.activeTab === 1) {
             return (
-                <div><h1>This is Angular</h1></div>
+                <div className="projects-grid">
+                {/* <h3 className='h3-style' style={{ marginBottom:'500px'}}>Visual Identity</h3> */}
+                    <Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginRight: '20px', marginBottom: '10px'}}>
+                    <img src={bannerLi} style={{ height: '100%', padding:'0'}} />
+                    </Card>
+
+                    <Card shadow={0} style={{width: '304', height: '346', margin: 'auto', marginRight: '20px', marginBottom: '10px'}}>
+                    <img src={cartaoLi} style={{ height: '100%', padding:'0'}} />
+                    </Card>
+
+                    <Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginRight: '20px', marginBottom: '10px'}}>
+                    <img src={cardapioLi} style={{ height: '100%', padding:'0'}} />
+                    </Card>
+
+
+
+                    <Card shadow={0} style={{width: '270', height: '380px', margin: 'auto', marginRight: '20px', marginBottom: '10px'}}>
+                    <a href="components/catalogo.pdf" download style={{ height: '100%', padding:'0'}}><img src={cardapioLi}  /></a>
+                    </Card>
+
+                    <Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginRight: '20px', marginBottom: '10px'}}>
+                    <img src={cardapioLi} style={{ height: '100%', padding:'0'}} />
+                    </Card>
+
+                    <Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginRight: '20px', marginBottom: '10px'}}>
+                    <img src={cardapioLi} style={{ height: '100%', padding:'0'}} />
+                    </Card>
+
+
+
+
+                    <Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginRight: '20px', marginBottom: '10px'}}>
+                    <img src={cardapioLi} style={{ height: '100%', padding:'0'}} />
+                    </Card>
+
+                    <Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginRight: '20px', marginBottom: '10px'}}>
+                    <img src={cardapioLi} style={{ height: '100%', padding:'0'}} />
+                    </Card>
+
+                    <Card shadow={0} style={{width: '256px', height: '256px', background: 'url(components/manu.jpg) center / cover', margin: 'auto'}}>
+                        <CardTitle expand />
+                        <CardActions style={{height: '52px', padding: '16px', background: 'rgba(0,0,0,0.2)'}}>
+                            <span style={{color: '#fff', fontSize: '14px', fontWeight: '500'}}>
+                                manu.jpg
+                            </span>
+                        </CardActions>
+                    </Card>
+
+                </div>
             )
-        } else if (this.state.activeTab === 2) {
-            return (
-                <div><h1>This is VueJS</h1></div>
-            )
+        
         }
     }
 
     render() {
         return (
-            <div className="category-tabs">
+            <div className="category-tabs" >
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-                    <Tab>React</Tab>
-                    <Tab>Angular</Tab>
-                    <Tab>VueJS</Tab>
-                    <Tab>MongoDB</Tab>
+                    <Tab style={{fontFamily: 'Raleway', fontSize: '18px', fontWeight: 'normal'}}>OnLine Media</Tab>
+                    <Tab style={{fontFamily: 'Raleway', fontSize: '18px', fontWeight: 'normal'}}>Printed Media</Tab>
                 </Tabs>
 
-                <Grid className="project-grid">
+                <Grid className="project-grid" >
                     <Cell col={12}>
-                        <div className="content">{this.toggleCategories()}</div>
+                        <div className="content"> {this.toggleCategories()} </div>
                     </Cell>
                 </Grid>
             </div>

@@ -9,8 +9,8 @@ class Experience extends Component {
                 <p style={{fontSize: '18px'}}>{this.props.startYear} - {this.props.endYear}</p>
                </Cell>
                <Cell col={8}>
-                <h4 style={{marginTop: '0px'}}>{this.props.joblName}</h4>
-                <p>{this.props.jobDescription}</p>
+                <h4 style={{marginTop: '0px', fontFamily: 'Raleway', fontSize: '18px'}}>{this.props.jobName}</h4>
+                <p style={{marginTop: '-20px', fontFamily: 'Raleway', fontSize: '16spx'}}>{this.props.jobDescription}</p>
                </Cell>
            </Grid>
         )

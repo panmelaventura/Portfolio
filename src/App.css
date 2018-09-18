@@ -8,6 +8,14 @@
   font-weight: bold;
 }
 
+.h3-style{
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: #cc6666
+  ;
+}
+
 /*.header-color{
   background: #DAD299;  
   background: -webkit-linear-gradient(to right, #B0DAB9, #DAD299); 
@@ -17,8 +25,8 @@
 .landing-grid{
   /*background: #DAD299;  
   background: -webkit-linear-gradient(to right, #B0DAB9, #DAD299);  
-  background: linear-gradient(to right, #B0DAB9, #DAD299); 
-  background-image: url("../../my-portfolio/src/background.jpg");*/
+  background: linear-gradient(to right, #B0DAB9, #DAD299); */
+  background-image: url("../../my-portfolio/src/background.jpg");
   text-align: center;
   position: relative;
   height: 600px;
@@ -38,18 +46,18 @@
   justify-content: center;
 }
 
-.layout-background{
-  background: url("../../my-portfolio/src/background5.jpg");
-  
-}
+
 
 .projects-grid{
   display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
 }
+
+
 
 /*About page*/
 .resume-right-col{
-  background: white;
   opacity:.8;
   color: black;
   padding: 2em;
@@ -170,8 +178,7 @@
   font-size: 3em;
   padding: 10px;
   margin: auto;
-  padding: auto;
-  
+  padding: auto;  
 }
 
 .progressbar{
@@ -179,16 +186,26 @@
 }
 
 .mdl-layout__drawer-button{
-  color: pink!important;
+  color: black!important;
+}
+
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after{
+  background: #cc6666!important;
+} 
+
+.mdl-card__title{
+  padding: 0!important;
 }
 
 .landing-text{
   justify-content: center;
   text-align: center;
-  width: 60%!important;
-  padding: 20px;
-  margin: auto;
-  
-}
+  width: 52%!important;
+  padding: 10px;
+  margin: auto;  
+  line-height: 2.0;
+  font-size: 15px;
+  }
+
 
 

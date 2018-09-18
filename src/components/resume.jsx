@@ -3,31 +3,26 @@ import {Grid, Cell} from 'react-mdl';
 import Education from './education';
 import Experience from './experience';
 import Skills from './skills';
-import pan2 from './pan2.png'
+import resume2 from './resume2.png';
 
 
 class Resume extends Component {
     render(){
         return(
             <div>
-                <Grid style={{ justifyContent: 'center'}}>
+                <Grid style={{ justifyContent: 'center', backgroundColor: '#f9ecec'}}>
                      {/*<Cell col={4}>
                         <div style={{textAlign: 'center'}}>
                        <img src={pan2} alt={"pan"} style={{height: '240px', paddingTop:'50px'}}> 
                         </div>
                         
-                    </Cell>*/}/
+                    </Cell>*/}
                     
                     
                     <Cell className="resume-right-col" col={10}>
-                        <h2 className="h2-style">Education</h2>
-                        <Education 
-                        startYear={2017} 
-                        endYear={2019}
-                        schoolName="Centennial College"
-                        schoolDescription="Software Engineering" 
-                        />
-
+                    <img src={resume2} alt={"icon"} style={{ height: '180px', marginLeft:'850px', position:'absolute'}}/> 
+                    <h2 className="h2-style">Resume</h2>
+                        <h3 className="h3-style">Education</h3>
                         <Education 
                         startYear={2012} 
                         endYear={2014}
@@ -44,52 +39,82 @@ class Resume extends Component {
 
                         <hr/>
 
-                        <h2 className="h2-style">Experience</h2>
+                        <h3 className="h3-style">Experience</h3>
 
                         <Experience
                         startYear={2015} 
                         endYear={2016}
                         jobName="Magna Systems"
-                        schoolDescription="Web Designer" 
+                        jobDescription="Web Designer" 
                         />
 
                         <Experience
                         startYear={2012} 
                         endYear={2015}
                         jobName="Tersel LTDA"
-                        schoolDescription="Marketing Analist" 
+                        jobDescription="Marketing Analist" 
                         />
 
                         <Experience
                         startYear={2012} 
                         endYear={2015}
                         jobName="Ricardo Electro LTDA"
-                        schoolDescription="Customers Support Coordinator" 
+                        jobDescription="Customers Support Coordinator" 
+                        />
+
+                        <Experience
+                        startYear={2002} 
+                        endYear={2008}
+                        jobName="Ibi Bank"
+                        jobDescription="Sales Supervisor" 
                         />
 
                         <hr/>
 
-                        <h2 className="h2-style">Skills</h2>
+                        <h3 className="h3-style">Skills</h3>
 
                         <Skills
-                            skill="javascript"
-                            progress={100}
+                            skill="HTML"
+                            progress={98}
                         />
 
                         <Skills
-                            skill="HTML/CSS"
-                            progress={100}
+                            skill="CSS"
+                            progress={98}
                         />
 
                         <Skills
-                            skill="NodeJS"
-                            progress={100}
+                            skill="JavaScript"
+                            progress={60}
                         />
 
                         <Skills
-                            skill="javascript"
-                            progress={100}
+                            skill="ReactJS"
+                            progress={40}
                         />
+
+                        <Skills
+                            skill="CorelDRAW"
+                            progress={98}
+                        />
+
+                        <Skills
+                            skill="Photoshop"
+                            progress={98}
+                        />
+
+                        <Skills
+                            skill="Illustrator"
+                            progress={97}
+                        />
+
+                        
+                        <Skills
+                            skill="Bootstrap"
+                            progress={80}
+                        />
+
+
 
                     </Cell>
                 </Grid>
