@@ -26,7 +26,7 @@
   /*background: #DAD299;  
   background: -webkit-linear-gradient(to right, #B0DAB9, #DAD299);  
   background: linear-gradient(to right, #B0DAB9, #DAD299); */
-  background-image: url("../../my-portfolio/src/background.jpg");
+  background-image: url("./background.jpg");
   text-align: center;
   position: relative;
   height: 600px;
