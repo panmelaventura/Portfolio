@@ -1,15 +1,15 @@
 *{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 .h2-style{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   font-size: 24px;
   font-weight: bold;
 }
 
 .h3-style{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   font-size: 18px;
   font-weight: normal;
   color: #cc6666
@@ -22,14 +22,78 @@
   background: linear-gradient(to right, #B0DAB9, #DAD299); 
 }*/
 
+@media screen and (max-width: 600px) {
+  .landing-grid{
+    background-image: url("./images/background6.jpg");
+    text-align: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .projects-grid{
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+    width: 90%;
+  }
+  
+}
+
+.projects-grid{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 10px;
+  width: 90%;
+}
+
+@media screen and (max-width: 600px) {
+  .projectCard
+  {
+   width: 40%;
+   height: 70%; margin: 'auto'; margin: 10px; padding: 2px;
+  }
+}
+
+.projectCard
+ {
+  width: 40%;
+  height: 70%; margin: 'auto'; margin: 10px; padding: 2px;
+ }
+
+ .onlineProjectCard
+ {
+   width: 28% !important;
+   margin: 'auto'; margin: 10px; padding: 2px;
+ }
+
+ @media screen and (max-width: 700px) {
+  .onlineProjectCard
+  {
+   width: 94% !important;
+   margin: 'auto'; margin: 10px; padding: 2px;
+  }
+}
+
 .landing-grid{
   /*background: #DAD299;  
   background: -webkit-linear-gradient(to right, #B0DAB9, #DAD299);  
   background: linear-gradient(to right, #B0DAB9, #DAD299); */
-  background-image: url("./background.jpg");
+  background-image: url("./images/background.jpg");
   text-align: center;
   position: relative;
-  height: 600px;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .landing-content{
@@ -48,11 +112,7 @@
 
 
 
-.projects-grid{
-  display: flex;
-  flex-wrap: wrap;
-  padding: 50px;
-}
+
 
 
 
@@ -110,7 +170,7 @@
 }
 
 .contact-grid p{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   font-size: 20px;
   justify-content: center;
   text-align: center;

@@ -33,12 +33,12 @@ class Contact extends Component {
                         </ListItemContent>
                     </ListItem>
 
-                     {/*<ListItem>
+                     <ListItem>
                         <ListItemContent style={{fontSize:'20px'}}>
                             <i className="fa fa-github" aria-hidden="true"/>
-                            GitHub
+                            <a href="https://www.github.com/panmelaventura" target="_blank" style={{textDecoration: 'none', color:'black'}} >GitHub</a>
                         </ListItemContent>
-                     </ListItem>*/}
+                     </ListItem>
 
                      <ListItem>
                         <ListItemContent style={{fontSize:'20px'}}>

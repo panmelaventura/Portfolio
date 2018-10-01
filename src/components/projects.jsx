@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardActions, CardText, CardMenu, IconButton, Document, Page, pageNumber, } from 'react-mdl';
 import snackbar from './snackbar.jpg';
+import '../App.css';
 import makeup from './makeup.jpg';
 import arcomaquinas from './arcomaquinas.jpg';
 import anchor from './anchor.jpg';
@@ -23,46 +24,54 @@ class Projects extends Component {
 
 
     toggleCategories() {
-        if (this.state.activeTab === 0) {
+        if (this.state.activeTab === 1) {
             return (
-                
-        <div className="projects-grid">
-            <Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginRight: '5px', marginBottom: '10px'}}>
-            <img src={snackbar} alt={"snackbar"} style={{ height: '100%', padding:'0'}} />
-            </Card>
 
-            <Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginRight: '5px', marginBottom: '10px'}}>
-            <img src={makeup} alt={"makeup"} style={{ height: '100%', padding:'0'}} />              
-            </Card>
+                <div className="projects-grid">
+                <Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginRight: '5px', marginBottom: '10px'}}>
+                <img src={snackbar} alt={"snackbar"} style={{ height: '100%', padding:'0'}} />
+                </Card>
+    
+                <Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginRight: '5px', marginBottom: '10px'}}>
+                <img src={makeup} alt={"makeup"} style={{ height: '100%', padding:'0'}} />              
+                </Card>
+    
+                <Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginRight: '5px', marginBottom: '10px'}}>
+                <img src={arcomaquinas} alt={"arcomaquinas"} style={{ height: '100%', padding:'0'}} />                             
+                </Card>
+    
+                {/*<Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginBottom: '10px',  marginRight:'370px'}}>
+                <img src={anchor} alt={"anchor"} style={{ height: '100%', padding:'0'}} />           
+                </Card>  */}       
+    
+                </div>
+              )
 
-            <Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginRight: '5px', marginBottom: '10px'}}>
-            <img src={arcomaquinas} alt={"arcomaquinas"} style={{ height: '100%', padding:'0'}} />                             
-            </Card>
-
-            {/*<Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginBottom: '10px',  marginRight:'370px'}}>
+                    {/*<Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginBottom: '10px',  marginRight:'370px'}}>
             <img src={anchor} alt={"anchor"} style={{ height: '100%', padding:'0'}} />           
-            </Card>  */}       
+            </Card>  */}
 
-            </div>
-          )
-        } else if (this.state.activeTab === 1) {
+        } else if (this.state.activeTab === 0) {
             return (
                 <div className="projects-grid">
-                {/* <h3 className='h3-style' style={{ marginBottom:'500px'}}>Visual Identity</h3> */}
+                    {/* <h3 className='h3-style' style={{ marginBottom:'500px'}}>Visual Identity</h3> */}
 
-                    <Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginRight: '5px', marginBottom: '15px'}}>
-                    <img src={folder} alt={"folder"} style={{ height: '100%', padding:'0'}} />
+                    <Card shadow={0} className="projectCard">
+                        <img src={folder} alt={"folder"} style={{ height: '100%', width: '100%', padding: '0' }} />
                     </Card>
 
-                    <Card shadow={0} style={{width: '304px', height: '380px', margin: 'auto', marginRight: '5px', marginBottom: '15px'}}>
-                    <img src={cartaoTersel} alt={"cartaoTersel"} style={{ height: '100%', padding:'0'}} />
+                    <Card shadow={0} className="projectCard">
+                        <img src={cartaoTersel} alt={"cartaoTersel"} style={{ height: '100%', width: '100%', padding: '0' }} />
                     </Card>
 
-                    <Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginRight: '5px', marginBottom: '15px'}}>
-                    <img src={catalogo} alt={"catalogo"} style={{ height: '100%', padding:'0'}} />
+                    <Card shadow={0} className="projectCard">
+                        <img src={catalogo} alt={"catalogo"} style={{ height: '100%', width: '100%', padding: '0' }} />
                     </Card>
 
-                    
+
+
+
+
 
 
                     {/*<Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginRight: '5px', marginBottom: '15px'}}>
@@ -90,16 +99,16 @@ class Projects extends Component {
                     <img src={manu} style={{ height: '100%', padding:'0'}} />
                     </Card> */}
 
-                   
-                    
 
 
 
-                    
-                    
+
+
+
+
                 </div>
             )
-        
+
         }
     }
 
@@ -107,8 +116,9 @@ class Projects extends Component {
         return (
             <div className="category-tabs" >
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-                    <Tab style={{fontFamily: 'Raleway', fontSize: '18px', fontWeight: 'normal'}}>OnLine Media</Tab>
-                    <Tab style={{fontFamily: 'Raleway', fontSize: '18px', fontWeight: 'normal'}}>Printed Media</Tab>
+                    <Tab style={{ fontFamily: 'Segoe UI', fontSize: '18px', fontWeight: 'normal' }}>Printed Media</Tab>
+                    <Tab style={{ fontFamily: 'Segoe UI', fontSize: '18px', fontWeight: 'normal' }}>OnLine Media</Tab>
+
                 </Tabs>
 
                 <Grid className="project-grid" >
@@ -121,3 +131,4 @@ class Projects extends Component {
     }
 }
 export default Projects;
+
