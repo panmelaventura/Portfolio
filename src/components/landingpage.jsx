@@ -19,7 +19,7 @@ class Landing extends Component {
 
 
                         <div className="landing-text">
-                            Graduated in Marketing, I have 5+ years of experience in
+                            Graduated in Marketing, I have 4+ years of experience in
                             Web Design, Printed Media, Marketing and related fields. I'm a professional 
                             with strategic vision, which values the good relationship and the organizational 
                             climate of the company. I'm an effective and proactive professional who is
