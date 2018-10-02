@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Layout, Header, Navigation, Drawer, Content, Footer, FooterSection } from 'react-mdl';
-import Main from './components/main';
-import { Link } from 'react-router-dom';
+import LandingPage from './components/landingpage';
 import Projects from './components/projects';
 import Contact from './components/contact';
 import Resume from './components/resume';
-import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor/lib';
 
 
 class App extends Component {
@@ -15,8 +13,8 @@ class App extends Component {
             <div className="demo-big-content">
                 <Layout className="layout-background" >
                     <Header style={{backgroundColor:'#f9ecec'}} 
-                        title={<Link style={{ textDecoration: 'none', color: 'black' }}
-                        to="/"></Link>} scroll >
+                        title={<a style={{ textDecoration: 'none', color: 'black' }}
+                        to="/"></a>} scroll >
                         
                         <Navigation >
                             <a style={{color: '#cc6666'}} href='/'>Home</a>
@@ -26,8 +24,8 @@ class App extends Component {
 
                         </Navigation>
                     </Header>
-                    <Drawer title={<Link style={{textDecoration: 'none', color: 'black'}} 
-            to="/"></Link>}>
+                    <Drawer title={<a style={{textDecoration: 'none', color: 'black'}} 
+            to="/"></a>}>
                 <Navigation>
                 
                     <a href='/'>Home</a>
@@ -38,7 +36,7 @@ class App extends Component {
             </Drawer> 
                     <Content>
                         <div className="page-content" />
-                        <Main />
+                        <LandingPage /> 
 
                         <div id="projects">
                             <Projects />

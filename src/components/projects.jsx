@@ -14,6 +14,8 @@ import cartaoTersel from './cartaoTersel.jpg';
 import manu from './manu.png';
 import nana from './nana.jpg';
 import festa from './festa.jpg';
+import FolderTersel from './pdf/Folder-Tersel-.pdf';
+import Scheuch from './pdf/Scheuch-Tersel.pdf';
 
 
 class Projects extends Component {
@@ -22,32 +24,34 @@ class Projects extends Component {
         this.state = { activeTab: 0 };
     }
 
-
     toggleCategories() {
         if (this.state.activeTab === 1) {
             return (
 
                 <div className="projects-grid">
-                <Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginRight: '5px', marginBottom: '10px'}}>
-                <img src={snackbar} alt={"snackbar"} style={{ height: '100%', padding:'0'}} />
-                </Card>
-    
-                <Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginRight: '5px', marginBottom: '10px'}}>
-                <img src={makeup} alt={"makeup"} style={{ height: '100%', padding:'0'}} />              
-                </Card>
-    
-                <Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginRight: '5px', marginBottom: '10px'}}>
-                <img src={arcomaquinas} alt={"arcomaquinas"} style={{ height: '100%', padding:'0'}} />                             
-                </Card>
-    
-                {/*<Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginBottom: '10px',  marginRight:'370px'}}>
-                <img src={anchor} alt={"anchor"} style={{ height: '100%', padding:'0'}} />           
-                </Card>  */}       
-    
-                </div>
-              )
 
-                    {/*<Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginBottom: '10px',  marginRight:'370px'}}>
+                    <Card shadow={0} style={{ width: '270px', height: '380px', margin: 'auto', marginRight: '5px', marginBottom: '10px' }}>
+                        {/* <a href={snackbar} target="_blank">  */}
+                            <img src={snackbar} alt={"snackbar"} style={{ height: '100%',   padding: '0' }}  />
+                        {/* </a>  */}
+                    </Card>
+
+                    <Card shadow={0} style={{ width: '270px', height: '380px', margin: 'auto', marginRight: '5px', marginBottom: '10px' }}>
+                        <a href={makeup} target="_blank">
+                            <img src={makeup} alt={"makeup"} style={{ height: '100%', width: '100%', padding: '0' }} />
+                        </a>
+                    </Card>
+
+                    <Card shadow={0} style={{ width: '270px', height: '380px', margin: 'auto', marginRight: '5px', marginBottom: '10px' }}>
+                        <a href={arcomaquinas} target="_blank">
+                            <img src={arcomaquinas} alt={"arcomaquinas"} style={{ height: '100%', width: '100%', padding: '0' }} />
+                        </a>
+                    </Card>
+
+                </div>
+            )
+
+            {/*<Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginBottom: '10px',  marginRight:'370px'}}>
             <img src={anchor} alt={"anchor"} style={{ height: '100%', padding:'0'}} />           
             </Card>  */}
 
@@ -57,60 +61,30 @@ class Projects extends Component {
                     {/* <h3 className='h3-style' style={{ marginBottom:'500px'}}>Visual Identity</h3> */}
 
                     <Card shadow={0} className="projectCard">
-                        <img src={folder} alt={"folder"} style={{ height: '100%', width: '100%', padding: '0' }} />
+                        <a href={FolderTersel} target="_blank">
+                            <img src={folder} alt={"folder"} style={{ height: '100%', width: '100%', padding: '0', border: '0' }} />
+                        </a>
                     </Card>
 
                     <Card shadow={0} className="projectCard">
-                        <img src={cartaoTersel} alt={"cartaoTersel"} style={{ height: '100%', width: '100%', padding: '0' }} />
+                        <a href={cartaoTersel} target="_blank">
+                            <img src={cartaoTersel} alt={"cartaoTersel"} style={{ height: '100%', width: '100%', padding: '0' }} />
+                        </a>
                     </Card>
 
                     <Card shadow={0} className="projectCard">
-                        <img src={catalogo} alt={"catalogo"} style={{ height: '100%', width: '100%', padding: '0' }} />
+                        <a href={Scheuch} target="_blank">
+                            <img src={catalogo} alt={"catalogo"} style={{ height: '100%', width: '100%', padding: '0' }} />
+                        </a>
                     </Card>
-
-
-
-
-
-
-
-                    {/*<Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginRight: '5px', marginBottom: '15px'}}>
-                    <img src={cardapioLi} style={{ height: '100%', padding:'0'}} />
-                    </Card>
-
-                    <Card shadow={0} style={{width: '304px', height: '380px', margin: 'auto', marginRight: '5px', marginBottom: '15px'}}>
-                    <img src={cartaoLi} style={{ height: '100%', padding:'0'}} />
-                    </Card>
-
-                    <Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginRight: '5px',  marginBottom: '15px'}}>
-                    <img src={bannerLi} alt={"bannerLi"} style={{ height: '100%', padding:'0'}} />
-                    </Card>
-
-
-                     <Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginRight: '5px', marginBottom: '15px'}}>
-                    <img src={manu} style={{ height: '100%', padding:'0'}} />
-                    </Card>
-
-                    <Card shadow={0} style={{width: '304px', height: '380px', margin: 'auto', marginRight: '5px', marginBottom: '15px'}}>
-                    <img src={festa} style={{ height: '100%', padding:'0'}} />
-                    </Card>
-
-                    <Card shadow={0} style={{width: '270px', height: '380px', margin: 'auto', marginRight: '5px', marginBottom: '15px'}}>
-                    <img src={manu} style={{ height: '100%', padding:'0'}} />
-                    </Card> */}
-
-
-
-
-
-
-
 
                 </div>
             )
 
         }
     }
+
+
 
     render() {
         return (
