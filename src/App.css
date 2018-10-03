@@ -260,11 +260,23 @@
 .landing-text{
   justify-content: center;
   text-align: center;
-  width: 52%!important;
+  width: 50% !important;
   padding: 10px;
   margin: auto;  
   line-height: 2.0;
   font-size: 15px;
+  }
+
+  @media screen and (max-width: 700px) {
+    .landing-text{
+      justify-content: center;
+      text-align: center;
+      width: 80% !important;
+      padding: 10px;
+      margin: auto;  
+      line-height: 2.0;
+      font-size: 15px;
+    }
   }
 
   @media (max-width: 479px){
